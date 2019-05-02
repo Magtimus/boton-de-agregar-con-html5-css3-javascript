@@ -1,0 +1,98 @@
+html,
+body{
+    height: 100%;
+}
+
+.container-all{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.plus{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    background: #009DE1;
+    border-radius: 50%;
+}
+
+.plus-line-h{
+    width: 6px;
+    height: 50px;
+    background: #fff;
+    border-radius: 10px;
+    position: absolute;
+    left: calc(50% - 3px);
+    top: calc(50% - 25px);
+}
+
+.plus-line-hb{
+    transform: rotate(90deg);
+}
+
+.plus-line-v{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 300ms;
+}
+
+
+.plus-link{
+    color: white;
+    font-size: 30px;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.5);
+    transition: all 500ms;
+}
+
+.plus-active{
+    height: 32px;
+    border-radius: 30px;
+}
+
+
+.plus-active .plus-line-v{
+    height: 60px;
+    top: calc(-100% - 60px);
+    left: calc(50% - 110px);
+    padding: 0 5px;
+    box-sizing: border-box;
+    width: 220px;
+    background: black;
+    border-radius: 60px;
+}
+
+.plus-active .plus-link{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+    margin: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
